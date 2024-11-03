@@ -1,0 +1,50 @@
+@import url('header.css');
+@import url('home.css');
+@import url('cardapios.css');
+@import url('avaliacao.css');
+@import url('footer.css');
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins/Poppins-Regular.ttf')format(truetype);
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .5s ease;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.menu_mobile{
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.line{
+    border: 1px solid #fff;
+    width: 28px;
+    transition: 0.3s;
+    margin: 8px auto;
+    display: block;
+
+}
+.menu_mobile.activar .line:nth-child(1){
+    transform: translateY(12px) rotate(-50deg);
+}
+.menu_mobile.activar .line:nth-child(3){
+    transform: translateY(-8px) rotate(50deg);
+}
+.menu_mobile.activar .line:nth-child(2){
+    width: 0;
+    
+    height: 0;
+}
+section{
+    padding: 28px 8%;
+}

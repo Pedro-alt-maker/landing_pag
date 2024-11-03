@@ -1,0 +1,29 @@
+.footer{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    padding: 15px;
+}
+.reded_social{
+    display: flex;
+    gap: 30px;
+}
+.reded_social a{
+    color: #ffff;
+    font-size: 1.4rem;
+    transition:  .3s ease;
+}
+.reded_social a:hover{
+    color: #c4baba;
+}
+@media only screen and (max-width:1117px) {
+    .footer{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}

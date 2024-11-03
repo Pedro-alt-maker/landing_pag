@@ -1,0 +1,85 @@
+.cardapio{
+    background-color: forestgreen;
+    min-height: calc(100vh - 89px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cardapio .sect_title{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.cardapio .descrption{
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+}
+.cardapio .sect_title span{
+    color: #ffffff;
+}
+.sect_cardapio{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+
+}
+.sect_cardapio img{
+    width: 50%;
+    height: 100%;
+}
+.card_cardapio{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 10px 13px rgb(0,0,0,0.1);
+    transition: transform .8s ease;
+    border-radius: 12px;
+}
+.card_cardapio:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 10px 13px rgb(0,0,0,0.2);
+}
+.sect_content{
+    padding: 8px;
+}
+.sect_cardapio .myButton{
+    border: none;
+    display: flex;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+.sect_cardapio_star{
+    margin: 14px 0;
+    color: #e9a209;
+}
+.comentari{
+    color: #1d1d1d;
+}
+.sect_cardapio .myButton span{
+    color: #1d1d1d;
+}
+
+
+@media screen and (max-width:1117px) {
+    .sect_cardapio{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 90px;
+    }
+
+}
+
+
+@media screen and (max-width:667px){
+    .sect_cardapio{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sect_title span{
+        display: none;
+    }
+} 
